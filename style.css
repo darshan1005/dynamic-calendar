@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dycalendar {
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+    padding: 15px;
+}
+
+.dycalendar table {
+    margin: 50px 30px 40xp 30px;
+}
+
+.dycalendar table tr:first-child td {
+    color: #9c3535;
+    font-size: 24px;
+}
+
+.dycalendar table tr:first-child td:hover {
+    background: transparent;
+    color: black;
+}
+
+.dycalendar table td {
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    font-family: 'Poppins' sans-serif;
+}
+
+.dycalendar table td:hover {
+    background: #f5f5f5;
+    transition: all .2s ease;
+}
+
+table {
+    border-spacing: 15px;
+}
+
+.dycalendar-month-container {
+    font-size: 26px;
+}
+
+.dycalendar-prev-next-btn.next-btn,
+.prev-btn {
+    padding: 8px 23px;
+    background: rgba(141, 141, 141, 0.111);
+    color: #4A359C;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 33px;
+    user-select: none;
+}
+
+.dycalendar .next-btn {
+    margin-right: 20px;
+}
+
+.dycalendar-prev-next-btn.next-btn:hover {
+    background: #f5f5f5;
+    columns: #000;
+    transition: all .2s ease;
+}
+
+.dycalendar-prev-next-btn.prev-btn:hover {
+    background: #f5f5f5;
+    color: #000;
+    transition: all .2s ease;
+}
+
+.dycalendar .dycalendar-today-date {
+    background: #4A359C;
+    color: white;
+    border-radius: 10px;
+}
+
+.dycalendar .dycalendar-today-date:hover {
+    border: 2px solid #4A359C;
+    color: #4A359C;
+}
+
+.dycalendar-header {
+    position: relative;
+    top: 33px;
+    font-family: 'Poppins', sans-serif, sy;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+::selection {
+    background-color: rgba(100, 149, 273, .8);
+    color: white;
+}
+
+.container .year .dy-text-center{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
